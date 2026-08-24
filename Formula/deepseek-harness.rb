@@ -5,6 +5,13 @@ class DeepseekHarness < Formula
   sha256 "47ec05f45ada5ab87779ae18a90456b5ebff5421dc0ff5c179677d65e1c16057"
   license "MIT"
 
+  livecheck do
+    url "https://registry.npmjs.org/@deepseek-ai/dsh/latest"
+    strategy :json do |json|
+      json["version"]
+    end
+  end
+
   depends_on "node"
   depends_on "pnpm"
 
