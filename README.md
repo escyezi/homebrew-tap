@@ -1,5 +1,22 @@
 # Escyezi Tap
 
+Community-maintained Homebrew formulae.
+
+## Formulae
+
+### DeepSeek Harness
+
+[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) is a
+plugin-based agent harness developed by DeepSeek. This formula is maintained by
+the tap owner and is not an official DeepSeek distribution.
+
+```sh
+brew install escyezi/tap/deepseek-harness
+```
+
+The installed command is `dsh`. It conflicts with Homebrew Core's unrelated
+`dsh` formula because both provide that executable.
+
 ## How do I install these formulae?
 
 `brew install escyezi/tap/<formula>`
